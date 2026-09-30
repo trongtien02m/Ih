@@ -1,0 +1,6 @@
+{
+  "name": "HordeEvolution.Runtime",
+  "rootNamespace": "HordeEvolution",
+  "references": ["Unity.InputSystem"],
+  "autoReferenced": true
+}
