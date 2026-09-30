@@ -1,0 +1,16 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,viewport-fit=cover">
+<title>Horde Evolution RPG — Mobile Test</title>
+<style>
+html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#111;color:#fff;font-family:system-ui;touch-action:none}
+canvas{width:100%;height:100%;display:block;background:#172018}
+#hud{position:fixed;inset:0;pointer-events:none;padding:max(12px,env(safe-area-inset-top)) 12px 12px}
+#top{display:flex;gap:10px;align-items:center}.bar{width:min(46vw,320px);height:18px;background:#333;border:2px solid #ddd;border-radius:10px;overflow:hidden}.fill{height:100%;background:#e34}
+#info{font-weight:700;text-shadow:0 2px 2px #000}
+#skill{pointer-events:auto;position:absolute;right:24px;bottom:max(28px,env(safe-area-inset-bottom));width:92px;height:92px;border-radius:50%;border:3px solid #fff;background:#6536a8;color:#fff;font-weight:800;font-size:16px}
+#stick{pointer-events:auto;position:absolute;left:22px;bottom:max(24px,env(safe-area-inset-bottom));width:130px;height:130px;border-radius:50%;background:#ffffff20;border:2px solid #ffffff55}
+#knob{position:absolute;width:54px;height:54px;border-radius:50%;background:#ffffff99;left:38px;top:38px}
+#msg{position:absolute;left:50%;top:40%;transform:translate(-50%,-50%);font-size:32px;font-weight:900;text-align:center;text-shadow:0 3px 5px #000}
+</style></head>
+<body><canvas id="game"></canvas><div id="hud"><div id="top"><div class="bar"><div class="fill" id="hp"></div></div><div id="info"></div></div><div id="msg"></div><div id="stick"><div id="knob"></div></div><button id="skill">SKILL</button></div>
+<script src="game.js"></script></body></html>
